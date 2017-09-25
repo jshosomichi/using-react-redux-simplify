@@ -1,0 +1,32 @@
+{
+  "name": "withredux",
+  "version": "1.0.0",
+  "description": "React-Reduxの最もシンプルな形を探るサンプル",
+  "main": "index.js",
+  "scripts": {
+    "build": "./node_modules/.bin/webpack",
+    "build-watch": "./node_modules/.bin/webpack -w",
+    "web-server": "./node_modules/.bin/nws"
+  },
+  "author": "f81 <tech@fringe81.com>",
+  "license": "ISC",
+  "dependencies": {
+    "@types/react": "^16.0.7",
+    "@types/react-dom": "^15.5.4",
+    "@types/react-redux": "^5.0.10",
+    "@types/redux": "^3.6.31",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "node-web-server": "^1.1.4",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-redux": "^5.0.6",
+    "redux": "^3.7.2",
+    "ts-loader": "^2.3.7",
+    "typescript": "^2.5.2",
+    "webpack": "^3.6.0"
+  }
+}
