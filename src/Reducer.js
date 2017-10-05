@@ -1,14 +1,9 @@
-export interface AppState {
-  x: boolean;
-  y: boolean;
-}
-
 export const defaultState = {
   x: true,
   y: true
 };
 
-export const AppReducer = ((state = defaultState, action: any) => {
+export const AppReducer = ((state = defaultState, action) => {
   switch (action.type) {
     case 'SYNC_ACTION': {
       return Object.assign({}, state, {x: action.x});

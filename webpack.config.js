@@ -1,6 +1,6 @@
 module.exports = {
   entry: {
-    app: ['babel-polyfill', './src/index.ts']
+    app: ['babel-polyfill', './src/index.js']
   },
   output: {
     path: __dirname + "/assets/js",
@@ -10,12 +10,12 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /(\.js$|\.jsx$)/,
         use: [
           {
             loader: "babel-loader",
             options: {
-              presets: ["es2015"]
+              presets: ["es2015", "react"]
             }
           }
         ],
@@ -37,7 +37,7 @@ module.exports = {
     ]
   },
   resolve: {
-    extensions: ['*', '.js', '.ts', '.tsx']
+    extensions: ['*', '.js', '.jsx', '.ts', '.tsx']
   }
 };
 

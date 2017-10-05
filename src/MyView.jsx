@@ -2,9 +2,9 @@ import * as React from 'react'
 import * as ReactDOM from 'react-dom';
 import {store} from './Store'
 import {asyncAction, syncAction} from './Actions'
-import {AppState, defaultState} from "./Reducer";
+import {defaultState} from "./Reducer";
 
-class MyView extends React.Component<{}, AppState> {
+class MyView extends React.Component {
 
   constructor() {
     super();
